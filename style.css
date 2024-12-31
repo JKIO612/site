@@ -1,0 +1,120 @@
+html * {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif
+}
+
+body {
+  margin: 0;
+}
+
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Put the wrapper behind the cards */
+  overflow: hidden; /* Hide any overflowing parts of the background image */
+}
+
+.background {
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  background-image: url("beach.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  clip-path: inset(0); /* Crop off edges */
+  -webkit-clip-path: inset(0);
+  z-index: -1; /* Put the background behind the cards */
+}
+
+.top-bar-item {
+  display: inline-block; /* or use 'block' if you want the link to take up the whole line */
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333; /* Change text color to your desired link color */
+  text-decoration: none; /* Remove underline by default */
+  border: 2px solid #fff; /* Add a border to make the link visible */
+  border-radius: 5px;
+  margin-bottom: .2vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.top-bar {
+  background-color: #333; /* Set the background color to a solid color (e.g., dark gray) */
+  display: flex;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+
+.hometitle {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.htlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.name {
+  margin-top: 10px;
+  margin-bottom: 5px; /* Adjust the spacing between name and description */
+  font-size: 10vw;
+}
+
+.description {
+  margin-bottom: 100px; /* Adjust the spacing between description and disclaimer */
+  font-size: 2vw;
+}
+
+.disclaimer {
+  font-size: 1.2vw;
+  margin-bottom: 100px;
+}
+
+.tldrcontent {
+  margin-bottom: 50px; /* Adjust the spacing between description and disclaimer */
+  margin-top: 50px;
+  font-size: 2.5rem;
+  width: 80%;
+}
+
+.contentcardodd {
+  background-color: #fff; /* Set the background color to a solid color (e.g., dark gray) */
+  display: flex;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  margin: 0;
+}
